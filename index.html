@@ -12,31 +12,40 @@
 
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- font awesome   -->
+ <script src="https://kit.fontawesome.com/3c9da554d6.js" crossorigin="anonymous"></script>
 </head>
 
 
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 w-11/12 mx-auto">
 
   <!-- ✅ Navbar -->
-  <div class="navbar bg-white shadow px-6">
-    <div class="flex-1">
+  <div class="navbar bg-white shadow px-6 flex justify-between">
+    <!-- left nav  ------------ -->
+    <div class="">
       <a class="btn btn-ghost text-xl flex items-center gap-2">
-        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="logo" class="w-8 h-8">
+        <img src="./assets/logo.png" alt="logo" class="w-8 h-8 font-bold">
         Emergency Service
       </a>
     </div>
+
+    <!-- right nav  -----------    -->
     <div class="flex-none gap-4">
-      <button class="btn btn-ghost"><span class="text-red-500">❤</span> 0</button>
-      <button class="btn btn-ghost">100 🪙</button>
-      <button class="btn btn-success">2 Copy</button>
+      <button class="btn btn-soft btn-primary rounded-xl"><span class="text-red-500">❤</span> <span id="love-nav">0</span></button>
+      <button class="btn btn-soft btn-primary rounded-xl"><span id="coin-nav">100</span> 🪙</button>
+      <button class="btn btn-success rounded-xl"><span id="copy-nav">2</span> Copy</button>
     </div>
+
   </div>
 
+
   <!-- ✅ Hero Section -->
+
   <section class="bg-green-700 text-white py-10 px-6 text-center">
     <div class="max-w-3xl mx-auto">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Seal_of_the_Government_of_Bangladesh.svg" class="w-20 mx-auto mb-4" alt="govt logo">
+      <img src="./assets/logo.png" class="w-20 mx-auto mb-4" alt="govt logo">
       <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
       <p class="mt-2 text-sm">
         Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
@@ -44,7 +53,196 @@
     </div>
   </section>
 
- 
+  <!-- ✅ Main Section -->
+  <main class="grid grid-cols-1 lg:grid-cols-4 gap-6 p-6">
+    <!-- Left 3/4 -->
+    <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Card Example -->
+      <div class="card bg-white shadow-md p-4">
+        <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/emergency.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">National Emergency Number</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">National Emergency</p>
+        <h3 class="text-2xl font-bold my-2">999</h3>
+        <div class="bg-slate-200 w-10 rounded-lg">
+            <h4 class="text-center">All</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/police.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Police Helpline Number</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Police</p>
+        <h3 class="text-2xl font-bold my-2">999</h3>
+          <div class="bg-slate-200 w-10 rounded-lg">
+            <h4 class="text-center">Police</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/fire-service.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Fire Service Number</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Fire Service</p>
+        <h3 class="text-2xl font-bold my-2">999</h3>
+          <div class="bg-slate-200 w-10 rounded-lg">
+            <h4 class="text-center">Fire</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/ambulance.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Ambulance Service</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Ambulance</p>
+        <h3 class="text-2xl font-bold my-2">1994-999999</h3>
+          <div class="bg-slate-200 w-20 rounded-lg">
+            <h4 class="text-center">Ambulance</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/emergency.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Women & Child Helpline</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Women & Child Helpline</p>
+        <h3 class="text-2xl font-bold my-2">109</h3>
+          <div class="bg-slate-200 w-40 rounded-lg">
+            <h4 class="text-center">Women and Child</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/emergency.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Anti-Corruption Helpline</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Anti-Corruption</p>
+        <h3 class="text-2xl font-bold my-2">106</h3>
+          <div class="bg-slate-200 w-20 rounded-lg">
+            <h4 class="text-center">Anti Corruption</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/emergency.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Electricity Helpline</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Electricity Outage</p>
+        <h3 class="text-2xl font-bold my-2">16216</h3>
+          <div class="bg-slate-200 w-20 rounded-lg">
+            <h4 class="text-center">Electricity</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/emergency.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Brac Helpline</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Brac</p>
+        <h3 class="text-2xl font-bold my-2">16445</h3>
+          <div class="bg-slate-200 w-10 rounded-lg">
+            <h4 class="text-center">Brac</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md p-4">
+         <div class="bg-pink-200 w-12 rounded-md">
+            <img src="./assets/emergency.png" class="w-8 mx-auto" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-lg font-bold">Bangladesh Railway Helpline</h2>
+          <button class="btn btn-ghost btn-xl">♡</button>
+        </div>
+        <p class="text-gray-500">Bangladesh Railway</p>
+        <h3 class="text-2xl font-bold my-2">163</h3>
+          <div class="bg-slate-200 w-18 rounded-lg">
+            <h4 class="text-center">Railway</h4>
+        </div> <br>
+        <div class="flex gap-2">
+          <button class="btn btn-outline btn-sm flex-1"> <i class="fa-regular fa-copy"></i> Copy</button>
+          <button class="btn btn-success btn-sm flex-1">📞 Call</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right 1/4 -->
+    <aside class="bg-white shadow-md rounded-lg font-bold p-4">
+      <div class="flex justify-between items-center">
+        <h2 class="font-bold">📞 Call History</h2>
+        <button class="btn btn-xl btn-error">Clear</button>
+      </div>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li class="flex justify-between"><span>Fire Service Number</span><span>11:36 AM</span></li>
+      
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
