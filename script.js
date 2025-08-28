@@ -62,8 +62,8 @@ for(let callBtn of callBtns){
         let callHistoryUl = document.getElementById('call-history-ul');
         let callHistoryLi =document.createElement('li');
         callHistoryLi.innerHTML = `
-        <li class="flex justify-between shadow-lg"><span>${serviceName}</span><span>${time}</span></li> <br>
-        <li>${serviceNumber}</li>
+        <li class="flex justify-between "><span>${serviceName}</span><span>${time}</span></li> <br>
+        <li class="shadow-lg">${serviceNumber}</li>
         `;
         callHistoryUl.append(callHistoryLi)
       
