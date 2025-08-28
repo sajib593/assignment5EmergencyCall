@@ -84,3 +84,47 @@ document.getElementById('clear-btn ').addEventListener('click', function(){
 
 
 
+// copyyyyyyyy button ---------------
+
+// let copyBtns = document.getElementsByClassName('copy-btn');
+// // console.log(copyBtns);
+
+// for(let copyBtn of copyBtns){
+//     // console.log(copyBtn);
+//     copyBtn.addEventListener('click', function(){
+//         alert('Copy hotline number')
+//         let hotLineNumber = copyBtn.parentNode.parentNode.children[3].innerText;
+        
+//         // console.log(hotLineNumber);
+//         let copyNav = document.getElementById('copy-nav').innerText;
+//         let copyNavNumber = Number(copyNav);
+//         document.getElementById('copy-nav').innerText = copyNavNumber + 1;
+        
+//     })
+// }
+
+
+
+
+let copyBtns = document.getElementsByClassName('copy-btn');
+
+for (let copyBtn of copyBtns) {
+  copyBtn.addEventListener('click', function () {
+    // get the hotline number (4th child in your card div)
+    let hotLineNumber = copyBtn.parentNode.parentNode.children[3].innerText;
+    
+    // copy to clipboard
+    navigator.clipboard.writeText(hotLineNumber).then(() => {
+      alert('Copied: ' + hotLineNumber);
+
+      // update copy counter
+      let copyNav = document.getElementById('copy-nav').innerText;
+      let copyNavNumber = Number(copyNav);
+      document.getElementById('copy-nav').innerText = copyNavNumber + 1;
+    })
+  });
+}
+
+
+
+
